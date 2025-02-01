@@ -8,8 +8,10 @@
 #   url: /categories/
 # - title: Tags
 #   url: /tags/
-# - title: Recipes
-#   url: /recipes/
+- title: Recipes
+  url: /recipes/
+- title: Portfolio
+  url: /portfolio/
 # - title: Search
 #   url: /search/
 # - title: External Page
