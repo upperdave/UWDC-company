@@ -40,6 +40,17 @@ disqus:
 twitter:
   username: # site's Twitter username, e.g. "mmistakes"
 
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/post/
+collections:    
+  portfolio:
+    output: true
+    permalink: /portfolio/post/
+
+
 # Liquid
 liquid:
   error_mode: strict
@@ -81,12 +92,29 @@ plugins:
 
 # Front Matter Defaults
 defaults:
-  # Posts defaults
+  # Post defaults
   - scope:
       path: "_posts"
       type: posts
     values:
       layout: post
+      comments: false
+      share: true
+  # Recipe defaults
+  - scope:
+      path: "_recipes"
+      type: posts
+    values:
+      layout: post
+      comments: false
+      share: true
+  # Portfolio defaults
+  - scope:
+      path: "_portfolio"
+      type: portfolio
+    values:
+      layout: post
+      comments: false
       share: true
 
 # Site Author
